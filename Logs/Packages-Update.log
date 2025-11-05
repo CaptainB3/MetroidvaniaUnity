@@ -1,5 +1,5 @@
 
-=== Mon Oct 27 14:43:09 2025
+=== Wed Oct 22 14:25:55 2025
 
 Packages were changed.
 Update Mode: mergeDefaultDependencies
@@ -36,8 +36,19 @@ The following packages were added:
   com.unity.modules.vr@1.0.0
   com.unity.modules.wind@1.0.0
   com.unity.modules.xr@1.0.0
+  com.unity.modules.accessibility@1.0.0
+  com.unity.multiplayer.center@1.0.0
 The following packages were updated:
-  com.unity.collab-proxy from version 1.13.5 to 2.7.1
-  com.unity.textmeshpro from version 3.0.6 to 3.0.7
-  com.unity.timeline from version 1.6.2 to 1.7.7
-  com.unity.visualscripting from version 1.7.6 to 1.9.4
+  com.unity.collab-proxy from version 2.6.0 to 2.9.3
+  com.unity.2d.animation from version 10.1.4 to 12.0.2
+  com.unity.2d.psdimporter from version 10.0.0 to 11.0.1
+  com.unity.2d.spriteshape from version 10.0.7 to 12.0.1
+  com.unity.2d.tilemap.extras from version 4.2.1 to 5.0.1
+  com.unity.2d.aseprite from version 1.2.1 to 2.0.2
+  com.unity.ide.rider from version 3.0.34 to 3.0.38
+  com.unity.ide.visualstudio from version 2.0.22 to 2.0.23
+  com.unity.inputsystem from version 1.12.0 to 1.14.2
+  com.unity.render-pipelines.universal from version 17.0.3 to 17.2.0
+  com.unity.test-framework from version 1.4.5 to 1.6.0
+  com.unity.timeline from version 1.8.7 to 1.8.9
+  com.unity.visualscripting from version 1.9.5 to 1.9.7
