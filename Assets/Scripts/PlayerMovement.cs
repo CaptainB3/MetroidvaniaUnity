@@ -11,13 +11,15 @@ public class PlayerMovement: MonoBehaviour {
     [SerializeField]
     private float jumpForce = 11f;
 
-    private float moveX;
+    public float moveX;
 
     private Rigidbody2D myBody;
 
     private SpriteRenderer sr;
 
-    private bool isGrounded = true;
+    public bool isGrounded = true;
+
+    public bool canMove = true;
 
     private void Awake()
     {
@@ -32,8 +34,10 @@ public class PlayerMovement: MonoBehaviour {
 
     void Update()
     {
-        PlayerMoveKeyboard();
-
+        if (canMove) // canMove variable in case we need to stop the player like if you die
+        {
+            PlayerMoveKeyboard();
+        }
         PlayerJump();
     }
 
