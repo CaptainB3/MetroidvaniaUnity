@@ -32,7 +32,7 @@ public class PlayerAttack : MonoBehaviour
             attackBuffered = false;
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) || Input.GetButtonDown("Fire1"))
         {
             if (canAttack)
             {

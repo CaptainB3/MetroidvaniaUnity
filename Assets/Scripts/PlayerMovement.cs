@@ -28,7 +28,6 @@ public class PlayerMovement: MonoBehaviour {
 
     [Header("Time Slow")]
     public bool canTimeSlow = false;
-    public KeyCode timeSlowKey = KeyCode.X;
     public float slowDuration = 2f;
     public float slowFactor = 0.5f;
     public float slowFactorPlayer = 1f;
@@ -57,7 +56,7 @@ public class PlayerMovement: MonoBehaviour {
         }
         PlayerJump();
 
-        if (canTimeSlow && Input.GetKeyDown(timeSlowKey) && !isSlowing)
+        if (canTimeSlow && !isSlowing && Input.GetButtonDown("Fire3"))
         {
             StartTimeSlow();
         }
