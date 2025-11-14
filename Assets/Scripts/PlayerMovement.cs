@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
-using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -37,6 +35,15 @@ public class PlayerMovement : MonoBehaviour
     private float slowTimer = 0f;
     private float normalGravity;
 
+    [Header("Roll")]
+    public bool canRoll = true;
+    public float rollForce = 8f;
+    public float rollDuration = 0.4f;
+    public float rollCooldown = 0.5f;
+    public bool isRolling = false;
+    private float rollTimer = 0f;
+    private float rollCooldownTimer = 0f;
+
     private void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
@@ -59,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
         }
         PlayerJump();
 
+        // TIME SLOW
         if (canTimeSlow && !isSlowing && controls.fire3Pressed)
         {
             StartTimeSlow();
@@ -72,17 +80,41 @@ public class PlayerMovement : MonoBehaviour
         }
 
         myBody.gravityScale = isSlowing ? normalGravity * slowFactorPlayer : normalGravity;
+
+        //ROLL
+        if (canRoll && !isRolling && rollCooldownTimer <= 0f && controls.rollPressed)
+        {
+            StartRoll();
+        }
+
+        // Update roll timer
+        if (isRolling)
+        {
+            rollTimer -= Time.unscaledDeltaTime;
+            if (rollTimer <= 0f)
+                EndRoll();
+        }
+
+        if (rollCooldownTimer > 0f)
+            rollCooldownTimer -= Time.unscaledDeltaTime;
     }
 
     //FixedUpdate is useful when performing physics calculations, called every set interval rather than every individual frame
     //ALL GOOD GAME DEVELOPERS TIE THEIR PHYSICS TO THE FRAME RATE
-    //private void FixedUpdate()
-    //{
-    //    PlayerJump();
-    //}
+    private void FixedUpdate()
+    {
+        // Move player forward while rolling
+        if (isRolling)
+        {
+            float direction = sr.flipX ? -1f : 1f;
+            myBody.linearVelocity = new Vector2(direction * rollForce, myBody.linearVelocity.y);
+        }
+    }
 
     void PlayerMoveKeyboard()
     {
+        if (isRolling) return;
+
         //GetAxis acts as a sort of slide, acts as a mild accelerator
         moveX = controls.horizontalInput;
 
@@ -137,6 +169,35 @@ public class PlayerMovement : MonoBehaviour
         Time.fixedDeltaTime = 0.02f;
 
         myBody.gravityScale = normalGravity;
+    }
+
+    void StartRoll()
+    {
+        isRolling = true;
+        rollTimer = rollDuration;
+        rollCooldownTimer = rollCooldown;
+
+        canMove = false;
+    }
+
+    void EndRoll()
+    {
+        isRolling = false;
+        canMove = true;
+
+        // Stop horizontal motion after roll
+        myBody.linearVelocity = new Vector2(0f, myBody.linearVelocity.y);
+    }
+    void Roll()
+    {
+        float direction = sr.flipX ? -1f : 1f;
+        float rollVelocity = rollForce;
+
+        if (isSlowing)
+            rollVelocity *= slowFactorPlayer;
+
+        // Move the player forward smoothly during the roll
+        myBody.linearVelocity = new Vector2(direction * rollVelocity, myBody.linearVelocity.y);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

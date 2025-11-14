@@ -7,7 +7,6 @@ public class PlayerAnimation : MonoBehaviour
     private PlayerMovement playerMovement;
     private Rigidbody2D rb;
     private PlayerControls controls;
-
     void Awake()
     {
         anim = GetComponent<Animator>();
@@ -43,6 +42,11 @@ public class PlayerAnimation : MonoBehaviour
         else if (currentSpeed < -0.1f)
         {
             sr.flipX = true; // Facing left
+        }
+
+        if (playerMovement.isRolling)
+        {
+            anim.SetTrigger("Roll");
         }
 
         float playerSpeedMultiplier;
