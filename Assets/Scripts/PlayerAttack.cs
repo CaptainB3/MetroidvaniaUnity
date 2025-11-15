@@ -10,6 +10,7 @@ public class PlayerAttack : MonoBehaviour
     private float lastAttackTime = 0f;
     private bool canAttack = true;
     private bool attackBuffered = false;
+    public bool isAttacking = false;
 
     [Header("Damage")]
     [SerializeField] private Transform attackPoint;
@@ -39,7 +40,7 @@ public class PlayerAttack : MonoBehaviour
 
         if (controls.fire1Pressed)
         {
-            if (canAttack)
+            if (canAttack && !playerMovement.isRolling)
             {
                 Attack();
             }
@@ -62,17 +63,15 @@ public class PlayerAttack : MonoBehaviour
     private void Attack()
     {
         attackBuffered = false;
-
         canAttack = false;
+        isAttacking = true;
         playerMovement.canMove = false;
-
         comboStep++;
 
         if (comboStep > 3)
         {
             comboStep = 1;
         }
-
         switch (comboStep)
         {
             case 1:
@@ -90,18 +89,18 @@ public class PlayerAttack : MonoBehaviour
     public void DoDamage()
     {
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-
         foreach (Collider2D enemy in hitEnemies)
         {
             Debug.Log("Hit " + enemy.name);
         }
     }
 
-    // Called by 
+    // Called by Animation Event
     public void ResetAttack()
     {
         lastAttackTime = Time.time;
         canAttack = true;
+        isAttacking = false;
         playerMovement.canMove = true;
 
         // If player clicked WHILE attack was being played
@@ -116,7 +115,6 @@ public class PlayerAttack : MonoBehaviour
     {
         if (attackPoint == null)
             return;
-
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }

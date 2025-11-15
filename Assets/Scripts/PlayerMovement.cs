@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
     private Rigidbody2D myBody;
     private SpriteRenderer sr;
     private PlayerControls controls;
 
     [Header("Basic Movement")]
-    //Serialize Field allows to directly edit variable in inspector tab while keeping them private from rest of program
     [SerializeField]
-    private float moveForce = 10f;
+    private float moveForce = 6f;
     [SerializeField]
-    private float jumpForce = 11f;
+    private float jumpForce = 6f;
 
     public float moveX;
     public bool isGrounded = true;
@@ -38,29 +36,36 @@ public class PlayerMovement : MonoBehaviour
     [Header("Roll")]
     public bool canRoll = true;
     public float rollForce = 8f;
-    public float rollDuration = 0.4f;
+    public float rollDuration = 0.5f;
+    private float rollTimer = 0.5f;
     public float rollCooldown = 0.5f;
     public bool isRolling = false;
-    private float rollTimer = 0f;
-    private float rollCooldownTimer = 0f;
+    public float rollCooldownTimer = 0.4f;
+    private CapsuleCollider2D collider;
+    private Vector2 normalColliderSize;
+    private Vector2 normalColliderOffset;
+    public Vector2 rollColliderSize = new Vector2(0.5f, 0.75f);
+    public Vector2 rollColliderOffset = new Vector2(0f, 0.45f);
 
     private void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         controls = GetComponent<PlayerControls>();
+        collider = GetComponent<CapsuleCollider2D>();
+        normalColliderSize = collider.size;
+        normalColliderOffset = collider.offset;
     }
 
     void Start()
     {
-        //empty
         jumpsLeft = extraJumps;
         normalGravity = myBody.gravityScale;
     }
 
     void Update()
     {
-        if (canMove) // canMove variable in case we need to stop the player like if you die
+        if (canMove)
         {
             PlayerMoveKeyboard();
         }
@@ -82,7 +87,7 @@ public class PlayerMovement : MonoBehaviour
         myBody.gravityScale = isSlowing ? normalGravity * slowFactorPlayer : normalGravity;
 
         //ROLL
-        if (canRoll && !isRolling && rollCooldownTimer <= 0f && controls.rollPressed)
+        if (canRoll && !isRolling && rollCooldownTimer <= 0f && controls.rollPressed && canMove)
         {
             StartRoll();
         }
@@ -99,11 +104,8 @@ public class PlayerMovement : MonoBehaviour
             rollCooldownTimer -= Time.unscaledDeltaTime;
     }
 
-    //FixedUpdate is useful when performing physics calculations, called every set interval rather than every individual frame
-    //ALL GOOD GAME DEVELOPERS TIE THEIR PHYSICS TO THE FRAME RATE
     private void FixedUpdate()
     {
-        // Move player forward while rolling
         if (isRolling)
         {
             float direction = sr.flipX ? -1f : 1f;
@@ -115,7 +117,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isRolling) return;
 
-        //GetAxis acts as a sort of slide, acts as a mild accelerator
         moveX = controls.horizontalInput;
 
         float horizontalVelocity = moveForce * moveX;
@@ -126,9 +127,6 @@ public class PlayerMovement : MonoBehaviour
 
     void PlayerJump()
     {
-        //Will default to whatever platform binds 'jump' (PC is space, controller may be A/X)
-        //GetButtonUp will return true when button is released
-        //GetButton will return true when pressed, held, and released
         if (controls.jumpPressed)
         {
             if (isGrounded)
@@ -146,7 +144,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
-        // Reset vertical velocity
         myBody.linearVelocity = new Vector2(myBody.linearVelocity.x, 0f);
 
         float currentJumpForce = isSlowing ? jumpForce * slowFactorPlayer : jumpForce;
@@ -159,8 +156,9 @@ public class PlayerMovement : MonoBehaviour
         slowTimer = slowDuration;
 
         Time.timeScale = slowFactor;
-        Time.fixedDeltaTime = 0.02f * Time.timeScale; // Physics consistency I think
+        Time.fixedDeltaTime = 0.02f * Time.timeScale;
     }
+
     void EndTimeSlow()
     {
         isSlowing = false;
@@ -177,6 +175,8 @@ public class PlayerMovement : MonoBehaviour
         rollTimer = rollDuration;
         rollCooldownTimer = rollCooldown;
 
+        collider.size = rollColliderSize;
+        collider.offset = rollColliderOffset;
         canMove = false;
     }
 
@@ -185,19 +185,10 @@ public class PlayerMovement : MonoBehaviour
         isRolling = false;
         canMove = true;
 
-        // Stop horizontal motion after roll
+        collider.size = normalColliderSize;
+        collider.offset = normalColliderOffset;
+
         myBody.linearVelocity = new Vector2(0f, myBody.linearVelocity.y);
-    }
-    void Roll()
-    {
-        float direction = sr.flipX ? -1f : 1f;
-        float rollVelocity = rollForce;
-
-        if (isSlowing)
-            rollVelocity *= slowFactorPlayer;
-
-        // Move the player forward smoothly during the roll
-        myBody.linearVelocity = new Vector2(direction * rollVelocity, myBody.linearVelocity.y);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -205,7 +196,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
-            jumpsLeft = canDoubleJump ? extraJumps : 0; // Set to extraJumps if true, 0 if false
+            jumpsLeft = canDoubleJump ? extraJumps : 0;
         }
     }
 

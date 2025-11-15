@@ -7,6 +7,7 @@ public class PlayerAnimation : MonoBehaviour
     private PlayerMovement playerMovement;
     private Rigidbody2D rb;
     private PlayerControls controls;
+
     void Awake()
     {
         anim = GetComponent<Animator>();
@@ -24,7 +25,15 @@ public class PlayerAnimation : MonoBehaviour
         float currentSpeed = playerMovement.moveX;
         bool onGround = playerMovement.isGrounded;
 
-        anim.SetInteger("AnimState", Mathf.RoundToInt(Mathf.Abs(currentSpeed)));
+        if (controls.rollPressed && playerMovement.rollCooldownTimer <= 0f && playerMovement.canMove)
+        {
+            anim.SetTrigger("Roll");
+        }
+
+        if (!playerMovement.isRolling)
+        {
+            anim.SetInteger("AnimState", Mathf.RoundToInt(Mathf.Abs(currentSpeed)));
+        }
 
         anim.SetBool("Grounded", onGround);
 
@@ -42,11 +51,6 @@ public class PlayerAnimation : MonoBehaviour
         else if (currentSpeed < -0.1f)
         {
             sr.flipX = true; // Facing left
-        }
-
-        if (playerMovement.isRolling)
-        {
-            anim.SetTrigger("Roll");
         }
 
         float playerSpeedMultiplier;
