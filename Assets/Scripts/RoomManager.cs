@@ -4,20 +4,28 @@ using UnityEngine.SceneManagement;
 
 public class RoomManager : MonoBehaviour
 {
-    public async void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        //Only assumes 1 door per room
         if (collision.gameObject.CompareTag("Player"))
         {
             switch (SceneManager.GetActiveScene().name)
             {
                 case "OpeningRoom":
-                    await SceneManager.LoadSceneAsync("SecondRoom");
-                    execute("SecondRoom");
+                    switch (gameObject.tag)
+                    {
+                        case "Door1":
+                            LoadScene("SecondRoom");
+                            break;
+                        case "Door2":
+                            LoadScene("ThirdRoom");
+                            break;
+                    }
                     break;
                 case "SecondRoom":
-                    await SceneManager.LoadSceneAsync("OpeningRoom");
-                    execute("OpeningRoom");
+                    LoadScene("OpeningRoom");
+                    break;
+                case "ThirdRoom":
+                    LoadScene("OpeningRoom");
                     break;
                 default:
                     break;
@@ -25,7 +33,12 @@ public class RoomManager : MonoBehaviour
         }
     }
 
-    void execute(string name)
+    private async void LoadScene(string name)
+    {
+        await SceneManager.LoadSceneAsync(name);
+        Execute(name);
+    }
+    private void Execute(string name)
     {
         SceneManager.SetActiveScene(SceneManager.GetSceneByName(name));
     }
