@@ -14,7 +14,7 @@ public class RoomManager : MonoBehaviour
                     switch (gameObject.tag)
                     {
                         case "Door1":
-                            LoadScene("SecondRoom");
+                            LoadScene("DockingBay");
                             break;
                         case "Door2":
                             LoadScene("ThirdRoom");
