@@ -33,6 +33,18 @@ public class ColorSwap_HeroKnight : MonoBehaviour
         }
     }
 
+    #if UNITY_EDITOR
+        void OnEnable()
+        {
+            if (!Application.isPlaying && !m_init)
+            {
+                m_spriteRenderer = GetComponent<SpriteRenderer>();
+                InitColorSwapTex();
+            }
+        }
+    #endif
+
+
     // Uses the value from the red channel in the source color (0-255) as an index for where to place the new color into the swap texture (256x1 px)
     public void SwapDemoColors()
     {
