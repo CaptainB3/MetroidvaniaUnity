@@ -1,0 +1,1001 @@
+fileFormatVersion: 2
+guid: 88333118ce62ac24faf44bcac9c3dfbc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4828213714986267908
+    second: Left2Logo_1_0
+  - first:
+      213: -8179667073564635121
+    second: Left2Logo_1_1
+  - first:
+      213: 6563440745532396649
+    second: Left2Logo_1_2
+  - first:
+      213: -4623123624871010841
+    second: Left2Logo_1_3
+  - first:
+      213: -7239030881796301785
+    second: Left2Logo_1_4
+  - first:
+      213: -6151517908471099502
+    second: Left2Logo_1_5
+  - first:
+      213: -6405093223044466880
+    second: Left2Logo_1_6
+  - first:
+      213: 7458184263953874031
+    second: Left2Logo_1_7
+  - first:
+      213: -2687282213351977701
+    second: Left2Logo_1_8
+  - first:
+      213: -1002470300896534588
+    second: Left2Logo_1_9
+  - first:
+      213: 4524067978866147906
+    second: Left2Logo_1_10
+  - first:
+      213: -7359008276693728722
+    second: Left2Logo_1_11
+  - first:
+      213: 2593363483026029768
+    second: Left2Logo_1_12
+  - first:
+      213: -3056767152100455554
+    second: Left2Logo_1_13
+  - first:
+      213: -5177219867743918635
+    second: Left2Logo_1_14
+  - first:
+      213: 1755107412556486301
+    second: Left2Logo_1_15
+  - first:
+      213: -5820663996758112828
+    second: Left2Logo_1_16
+  - first:
+      213: 1447788073110495639
+    second: Left2Logo_1_17
+  - first:
+      213: -1959361237298564157
+    second: Left2Logo_1_18
+  - first:
+      213: 263758883202236073
+    second: Left2Logo_1_19
+  - first:
+      213: 7503125412693685340
+    second: Left2Logo_1_20
+  - first:
+      213: 2190439842579853928
+    second: Left2Logo_1_21
+  - first:
+      213: -4098503445766739119
+    second: Left2Logo_1_22
+  - first:
+      213: -6995369351216226754
+    second: Left2Logo_1_23
+  - first:
+      213: -6242426237612874649
+    second: Left2Logo_1_24
+  - first:
+      213: -3016071279389644642
+    second: Left2Logo_1_25
+  - first:
+      213: 168014267529709861
+    second: Left2Logo_1_26
+  - first:
+      213: -5953949596399140491
+    second: Left2Logo_1_27
+  - first:
+      213: -6050868241896092398
+    second: Left2Logo_1_28
+  - first:
+      213: 8527901138292709791
+    second: Left2Logo_1_29
+  - first:
+      213: -6693129132524177777
+    second: Left2Logo_1_30
+  - first:
+      213: -6458950961203925862
+    second: Left2Logo_1_31
+  - first:
+      213: -3883648866918148167
+    second: Left2Logo_1_32
+  - first:
+      213: 4827636634864645946
+    second: Left2Logo_1_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Left2Logo_1_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 533
+        width: 179
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa039a053dbefcb0800000000000000
+      internalID: -4828213714986267908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_1
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 533
+        width: 179
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f009833622cfb7e80800000000000000
+      internalID: -8179667073564635121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_2
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 533
+        width: 144
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96498cd5596061b50800000000000000
+      internalID: 6563440745532396649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_3
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 533
+        width: 144
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7edd8dabe8d57dfb0800000000000000
+      internalID: -4623123624871010841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_4
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 533
+        width: 179
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72cd27c54cbc98b90800000000000000
+      internalID: -7239030881796301785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_5
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 533
+        width: 179
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29f402ced0b61aaa0800000000000000
+      internalID: -6151517908471099502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_6
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 533
+        width: 179
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0473c2736a98c17a0800000000000000
+      internalID: -6405093223044466880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_7
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 533
+        width: 215
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6cf06aa21bc08760800000000000000
+      internalID: 7458184263953874031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_8
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 533
+        width: 604
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d0ee5901bd4bad0800000000000000
+      internalID: -2687282213351977701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_9
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 372
+        width: 87
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cfde2992928612f0800000000000000
+      internalID: -1002470300896534588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_10
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 372
+        width: 87
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24249047bd7b8ce30800000000000000
+      internalID: 4524067978866147906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_11
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 372
+        width: 63
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e22c28846fc8fd990800000000000000
+      internalID: -7359008276693728722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_12
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 372
+        width: 75
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc7c3bf85a7df320800000000000000
+      internalID: 2593363483026029768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_13
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 372
+        width: 87
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b48f9787e2495d0800000000000000
+      internalID: -3056767152100455554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_14
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 347
+        width: 75
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d5670bd5f1d628b0800000000000000
+      internalID: -5177219867743918635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_15
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 372
+        width: 87
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d96951c84e46b5810800000000000000
+      internalID: 1755107412556486301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_16
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 372
+        width: 27
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c5c3542fe8d83fa0800000000000000
+      internalID: -5820663996758112828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_17
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 372
+        width: 87
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7916ccfe493971410800000000000000
+      internalID: 1447788073110495639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_18
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 372
+        width: 87
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c33628f553fec4e0800000000000000
+      internalID: -1959361237298564157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_19
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 372
+        width: 124
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae7f9b8e4f09a300800000000000000
+      internalID: 263758883202236073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_20
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 372
+        width: 87
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5430d04fc4702860800000000000000
+      internalID: 7503125412693685340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_21
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 372
+        width: 75
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 862b5de6e61066e10800000000000000
+      internalID: 2190439842579853928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_22
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 372
+        width: 75
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15beb54b4d03f17c0800000000000000
+      internalID: -4098503445766739119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_23
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 372
+        width: 75
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3e1a1c53a47bee90800000000000000
+      internalID: -6995369351216226754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_24
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 372
+        width: 87
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 764a18229627e59a0800000000000000
+      internalID: -6242426237612874649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_25
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 372
+        width: 124
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e98e8b6b623c426d0800000000000000
+      internalID: -3016071279389644642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_26
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 372
+        width: 124
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5294e4d0618e45200800000000000000
+      internalID: 168014267529709861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_27
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 469
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5718c0033625f5da0800000000000000
+      internalID: -5953949596399140491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_28
+      rect:
+        serializedVersion: 2
+        x: 1902
+        y: 372
+        width: 63
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21d4713946ff60ca0800000000000000
+      internalID: -6050868241896092398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_29
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 372
+        width: 87
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f99169b07e0395670800000000000000
+      internalID: 8527901138292709791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_30
+      rect:
+        serializedVersion: 2
+        x: 2072
+        y: 469
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f86f314048a3d13a0800000000000000
+      internalID: -6693129132524177777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_31
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 372
+        width: 87
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ca5cf52523d56a0800000000000000
+      internalID: -6458950961203925862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_32
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 372
+        width: 27
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7def69ee18a1ac0800000000000000
+      internalID: -3883648866918148167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left2Logo_1_33
+      rect:
+        serializedVersion: 2
+        x: 2072
+        y: 372
+        width: 27
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a37f4c501f53ff240800000000000000
+      internalID: 4827636634864645946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Left2Logo_1_0: -4828213714986267908
+      Left2Logo_1_1: -8179667073564635121
+      Left2Logo_1_10: 4524067978866147906
+      Left2Logo_1_11: -7359008276693728722
+      Left2Logo_1_12: 2593363483026029768
+      Left2Logo_1_13: -3056767152100455554
+      Left2Logo_1_14: -5177219867743918635
+      Left2Logo_1_15: 1755107412556486301
+      Left2Logo_1_16: -5820663996758112828
+      Left2Logo_1_17: 1447788073110495639
+      Left2Logo_1_18: -1959361237298564157
+      Left2Logo_1_19: 263758883202236073
+      Left2Logo_1_2: 6563440745532396649
+      Left2Logo_1_20: 7503125412693685340
+      Left2Logo_1_21: 2190439842579853928
+      Left2Logo_1_22: -4098503445766739119
+      Left2Logo_1_23: -6995369351216226754
+      Left2Logo_1_24: -6242426237612874649
+      Left2Logo_1_25: -3016071279389644642
+      Left2Logo_1_26: 168014267529709861
+      Left2Logo_1_27: -5953949596399140491
+      Left2Logo_1_28: -6050868241896092398
+      Left2Logo_1_29: 8527901138292709791
+      Left2Logo_1_3: -4623123624871010841
+      Left2Logo_1_30: -6693129132524177777
+      Left2Logo_1_31: -6458950961203925862
+      Left2Logo_1_32: -3883648866918148167
+      Left2Logo_1_33: 4827636634864645946
+      Left2Logo_1_4: -7239030881796301785
+      Left2Logo_1_5: -6151517908471099502
+      Left2Logo_1_6: -6405093223044466880
+      Left2Logo_1_7: 7458184263953874031
+      Left2Logo_1_8: -2687282213351977701
+      Left2Logo_1_9: -1002470300896534588
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
