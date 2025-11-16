@@ -83,30 +83,30 @@ public class AudioManager : MonoBehaviour
 
     // ───────────────── MUSIC CONTROL ─────────────────
 
-sic(AudioClip clip, float fadeDuration = -1f, bool loop = true)
-    {
-        if (clip == null)
-        {
-            Debug.LogWarning("AudioManager.PlayMusic called with null clip.");
-            return;
-        }
+//sic(AudioClip clip, float fadeDuration = -1f, bool loop = true)
+//    {
+//        if (clip == null)
+//        {
+//            Debug.LogWarning("AudioManager.PlayMusic called with null clip.");
+//            return;
+//        }
 
-        if (fadeDuration < 0f)
-            fadeDuration = defaultMusicFadeTime;
+//        if (fadeDuration < 0f)
+//            fadeDuration = defaultMusicFadeTime;
 
-        idleMusicSource.clip = clip;
-        idleMusicSource.loop = loop;
-        idleMusicSource.volume = 0f;
-        idleMusicSource.Play();
+//        idleMusicSource.clip = clip;
+//        idleMusicSource.loop = loop;
+//        idleMusicSource.volume = 0f;
+//        idleMusicSource.Play();
 
-        // Crossfade
-        StartCoroutine(CrossfadeMusic(currentMusicSource, idleMusicSource, fadeDuration));
+//        // Crossfade
+//        StartCoroutine(CrossfadeMusic(currentMusicSource, idleMusicSource, fadeDuration));
 
-        // Swap references
-        AudioSource temp = currentMusicSource;
-        currentMusicSource = idleMusicSource;
-        idleMusicSource = temp;
-    }
+//        // Swap references
+//        AudioSource temp = currentMusicSource;
+//        currentMusicSource = idleMusicSource;
+//        idleMusicSource = temp;
+//    }
 
     public void StopMusic(float fadeDuration = -1f)
     {
