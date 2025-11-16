@@ -37,16 +37,19 @@ TagManager:
   - 
   - 
   - 
-  - P1_Cam,era
+  - P1_Camera
   - P2_Camera
   m_SortingLayers:
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Far
-    uniqueID: 3455350413
+    uniqueID: 1648292797
     locked: 0
-  - name: Level_back
+  - name: Level_background_far
+    uniqueID: 3619947919
+    locked: 0
+  - name: Level_background
     uniqueID: 3565993699
     locked: 0
   - name: Level
@@ -55,8 +58,11 @@ TagManager:
   - name: Player
     uniqueID: 3766843493
     locked: 0
-  - name: Leve_near
+  - name: Level_foreground
     uniqueID: 3893464957
+    locked: 0
+  - name: Near
+    uniqueID: 804660177
     locked: 0
   m_RenderingLayers:
   - Default

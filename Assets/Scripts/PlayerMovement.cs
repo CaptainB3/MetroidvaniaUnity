@@ -65,11 +65,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        PlayerJump();
         if (canMove)
         {
             PlayerMoveKeyboard();
         }
-        PlayerJump();
 
         // TIME SLOW
         if (canTimeSlow && !isSlowing && controls.fire3Pressed)
@@ -84,7 +84,7 @@ public class PlayerMovement : MonoBehaviour
                 EndTimeSlow();
         }
 
-        myBody.gravityScale = isSlowing ? normalGravity * slowFactorPlayer : normalGravity;
+        //myBody.gravityScale = isSlowing ? normalGravity * slowFactorPlayer : normalGravity;
 
         //ROLL
         if (canRoll && !isRolling && rollCooldownTimer <= 0f && controls.rollPressed && canMove)
@@ -147,13 +147,16 @@ public class PlayerMovement : MonoBehaviour
         myBody.linearVelocity = new Vector2(myBody.linearVelocity.x, 0f);
 
         float currentJumpForce = isSlowing ? jumpForce * slowFactorPlayer : jumpForce;
-        myBody.AddForce(Vector2.up * currentJumpForce, ForceMode2D.Impulse);
+        myBody.AddForce(currentJumpForce * Vector2.up, ForceMode2D.Impulse);
     }
 
     void StartTimeSlow()
     {
         isSlowing = true;
         slowTimer = slowDuration;
+        moveForce /= (slowFactorPlayer);
+        jumpForce /= (slowFactorPlayer);
+        //myBody.gravityScale /= (slowFactorPlayer);
 
         Time.timeScale = slowFactor;
         Time.fixedDeltaTime = 0.02f * Time.timeScale;
@@ -162,11 +165,13 @@ public class PlayerMovement : MonoBehaviour
     void EndTimeSlow()
     {
         isSlowing = false;
+        moveForce *= (slowFactorPlayer);
+        jumpForce *= (slowFactorPlayer);
 
         Time.timeScale = 1f;
         Time.fixedDeltaTime = 0.02f;
 
-        myBody.gravityScale = normalGravity;
+        //myBody.gravityScale = normalGravity;
     }
 
     void StartRoll()
