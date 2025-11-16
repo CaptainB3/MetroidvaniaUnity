@@ -49,6 +49,7 @@ GameObject:
   - component: {fileID: 1937222631239764390}
   - component: {fileID: 6851087514020468}
   - component: {fileID: 1221117983348384825}
+  - component: {fileID: -3789768615837070596}
   m_Layer: 0
   m_Name: Alan
   m_TagString: Player
@@ -298,12 +299,14 @@ MonoBehaviour:
   fire2Button: Fire2_P2
   fire3Button: Fire3_P2
   rollButton: Fire2_P2
+  interactButton: Interact
   horizontalInput: 0
   jumpPressed: 0
   fire1Pressed: 0
   fire2Pressed: 0
   fire3Pressed: 0
   rollPressed: 0
+  interactPressed: 0
 --- !u!114 &1221117983348384825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,3 +321,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ColorSwap_HeroKnight
   m_sourceColors: []
   m_newColors: []
+--- !u!114 &-3789768615837070596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5785255489233096748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac052a88033601a45bb6c8aefa864c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteract

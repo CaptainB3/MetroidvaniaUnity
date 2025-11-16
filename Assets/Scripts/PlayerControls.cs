@@ -9,6 +9,7 @@ public class PlayerControls : MonoBehaviour
     public string fire2Button = "Fire2";
     public string fire3Button = "Fire3";
     public string rollButton = "Fire2";
+    public string interactButton = "Interact";
 
     [Header("Current Input State")]
 
@@ -18,6 +19,7 @@ public class PlayerControls : MonoBehaviour
     public bool fire2Pressed;
     public bool fire3Pressed;
     public bool rollPressed;
+    public bool interactPressed;
 
     void Update()
     {
@@ -28,5 +30,6 @@ public class PlayerControls : MonoBehaviour
         fire2Pressed = Input.GetButtonDown(fire2Button);
         fire3Pressed = Input.GetButtonDown(fire3Button);
         rollPressed = Input.GetButtonDown(rollButton);
+        interactPressed = Input.GetButtonDown(interactButton);
     }
 }

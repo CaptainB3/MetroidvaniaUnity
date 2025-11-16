@@ -48,6 +48,8 @@ GameObject:
   - component: {fileID: 7769244633957949277}
   - component: {fileID: 2101345450920019052}
   - component: {fileID: 563873761628350398}
+  - component: {fileID: 3455683174141337740}
+  - component: {fileID: 1095711219950242383}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -297,9 +299,55 @@ MonoBehaviour:
   fire2Button: Fire2
   fire3Button: Fire3
   rollButton: Fire2
+  interactButton: Interact
   horizontalInput: 0
   jumpPressed: 0
   fire1Pressed: 0
   fire2Pressed: 0
   fire3Pressed: 0
   rollPressed: 0
+  interactPressed: 0
+--- !u!114 &3455683174141337740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6305677205850709478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f490bd032e958a45a5d3fd12005a25a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  moveForce: 6
+  jumpForce: 6
+  moveX: 0
+  isGrounded: 1
+  canMove: 1
+  canDoubleJump: 0
+  extraJumps: 1
+  canTimeSlow: 0
+  slowDuration: 2
+  slowFactor: 0.5
+  slowFactorPlayer: 1
+  isSlowing: 0
+  canRoll: 1
+  rollForce: 8
+  rollDuration: 0.5
+  rollCooldown: 0.5
+  isRolling: 0
+  rollCooldownTimer: 0.4
+  rollColliderSize: {x: 0.5, y: 0.75}
+  rollColliderOffset: {x: 0, y: 0.45}
+--- !u!114 &1095711219950242383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6305677205850709478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac052a88033601a45bb6c8aefa864c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteract
