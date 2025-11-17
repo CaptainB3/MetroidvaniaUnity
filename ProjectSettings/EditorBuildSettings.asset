@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/DoorTest1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/DoorTest2.unity
+    path: Assets/Scenes/SecondRoom.unity
     guid: d89500323913eb64ca4b9d598ac71103
   - enabled: 1
     path: Assets/Scenes/DockingBay.unity
